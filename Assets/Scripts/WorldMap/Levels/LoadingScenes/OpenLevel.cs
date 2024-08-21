@@ -6,7 +6,9 @@ public class OpenLevel : MonoBehaviour
 {
 
     private ChangeScene changeScene;
+    public GameObject endTransition;
     public string newSceneName;
+    public float waitTime = 1f;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +21,14 @@ public class OpenLevel : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.E))
         {
-            changeScene.changeScene(newSceneName);
+            StartCoroutine(transitionStuff());
         }
+    }
+
+    private IEnumerator transitionStuff()
+    {
+        endTransition.SetActive(true);
+        yield return new WaitForSecondsRealtime(waitTime);
+        changeScene.changeScene(newSceneName);
     }
 }

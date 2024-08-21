@@ -6,12 +6,22 @@ public class TiggerActivatePopUp : MonoBehaviour
 {
 
     public GameObject popUp;
+    public GameObject lockedPopUp;
+    public bool isUnlocked = false;
 
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "Player")
         {
-            popUp.SetActive(true);
+            if(isUnlocked)
+            {
+                popUp.SetActive(true);
+            }
+            else
+            {
+                lockedPopUp.SetActive(true);
+            }
+            
         }
     }
 
@@ -20,6 +30,7 @@ public class TiggerActivatePopUp : MonoBehaviour
         if(other.gameObject.tag == "Player")
         {
             popUp.SetActive(false);
+            lockedPopUp.SetActive(false);
         }
     }
 }
