@@ -20,6 +20,7 @@ public class WorldMapMovement : MonoBehaviour
     public float sprintSpeed = 10f;
     public bool canMove = true;
     private bool canJump = true;
+    public GameObject playerModel;
 
     //random important values
     private Vector3 velocity = new Vector3(0,0,0);
@@ -70,5 +71,37 @@ public class WorldMapMovement : MonoBehaviour
         
         transform.Translate(velocity * Time.deltaTime);
 
+        if(horizontal > 0 && vertical > 0)
+        {
+            playerModel.transform.eulerAngles = new Vector3(0, 45, 0);
+        }
+        else if(horizontal > 0 && vertical == 0)
+        {
+            playerModel.transform.eulerAngles = new Vector3(0, 90, 0);
+        }
+        else if(horizontal > 0 && vertical < 0)
+        {
+            playerModel.transform.eulerAngles = new Vector3(0, 135, 0);
+        }
+        else if(horizontal == 0 && vertical < 0)
+        {
+            playerModel.transform.eulerAngles = new Vector3(0, 180, 0);
+        }
+        else if(horizontal < 0 && vertical < 0)
+        {
+            playerModel.transform.eulerAngles = new Vector3(0, 225, 0);
+        }
+        else if(horizontal < 0 && vertical == 0)
+        {
+            playerModel.transform.eulerAngles = new Vector3(0, 270, 0);
+        }
+        else if(horizontal < 0 && vertical > 0)
+        {
+            playerModel.transform.eulerAngles = new Vector3(0, 315, 0);
+        }
+        else if(horizontal == 0 && vertical > 0)
+        {
+            playerModel.transform.eulerAngles = new Vector3(0, 0, 0);
+        }
     }
 }
