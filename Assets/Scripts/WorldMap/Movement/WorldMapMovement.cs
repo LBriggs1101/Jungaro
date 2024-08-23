@@ -64,7 +64,7 @@ public class WorldMapMovement : MonoBehaviour
         transform.Translate(new Vector3(horizontal,0,vertical) * speed * Time.deltaTime);
 
         //Do gravity
-        if(canMove)
+        if(canMove && !isGrounded)
         {
             velocity.y += gravity * Time.deltaTime;
         }
