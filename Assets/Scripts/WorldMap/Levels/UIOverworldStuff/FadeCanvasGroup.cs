@@ -5,7 +5,7 @@ using UnityEngine;
 public class FadeCanvasGroup : MonoBehaviour
 {
 
-    private bool isFaded = false;
+    private bool isFaded = true;
 
     public float Duration = 0.4f;
 

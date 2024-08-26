@@ -8,11 +8,22 @@ public class TiggerActivatePopUp : MonoBehaviour
     public GameObject popUp;
     public GameObject lockedPopUp;
     public bool isUnlocked = false;
+    public LevelData levelData;
+
+    
+
+    private FadeCanvasGroup fadeCanvas;
+
+    void Start()
+    {
+        fadeCanvas = GameObject.Find("FadeCanvas").GetComponent<FadeCanvasGroup>();
+    }
 
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "Player")
         {
+            fadeCanvas.Fade();
             if(isUnlocked)
             {
                 popUp.SetActive(true);
@@ -29,6 +40,7 @@ public class TiggerActivatePopUp : MonoBehaviour
     {
         if(other.gameObject.tag == "Player")
         {
+            fadeCanvas.Fade();
             popUp.SetActive(false);
             lockedPopUp.SetActive(false);
         }

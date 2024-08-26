@@ -1804,8 +1804,9 @@ GameObject:
   - component: {fileID: 961814597}
   - component: {fileID: 961814599}
   - component: {fileID: 961814598}
+  - component: {fileID: 961814600}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: FadeCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1845,7 +1846,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961814596}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 0
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
@@ -1857,6 +1858,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961814596}
   m_CullTransparentMesh: 1
+--- !u!114 &961814600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961814596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9dbbea57a33dc64ba9399c2ae69107c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Duration: 0.4
 --- !u!1 &987244247
 GameObject:
   m_ObjectHideFlags: 0
@@ -2355,6 +2369,7 @@ MonoBehaviour:
   popUp: {fileID: 997669195}
   lockedPopUp: {fileID: 512208026}
   isUnlocked: 0
+  levelData: {fileID: 0}
 --- !u!135 &1647159050
 SphereCollider:
   m_ObjectHideFlags: 0
