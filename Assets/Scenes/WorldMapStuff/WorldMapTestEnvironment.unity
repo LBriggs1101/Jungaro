@@ -874,7 +874,7 @@ GameObject:
   - component: {fileID: 275883659}
   - component: {fileID: 275883658}
   m_Layer: 5
-  m_Name: BeatLevelStar (Unfinished)
+  m_Name: BeatLevelStar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -949,7 +949,7 @@ GameObject:
   - component: {fileID: 308093479}
   - component: {fileID: 308093478}
   m_Layer: 5
-  m_Name: BeatChallengeStar (Unfinished) (1)
+  m_Name: BeatChallengeStar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1883,7 +1883,7 @@ GameObject:
   - component: {fileID: 987244250}
   - component: {fileID: 987244249}
   m_Layer: 5
-  m_Name: BeatNoDeathStar (Unfinished) (2)
+  m_Name: BeatNoDeathStar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2369,7 +2369,9 @@ MonoBehaviour:
   popUp: {fileID: 997669195}
   lockedPopUp: {fileID: 512208026}
   isUnlocked: 0
-  levelData: {fileID: 0}
+  levelData: {fileID: 11400000, guid: d9389d11bac0c3f4c852e212e678888c, type: 2}
+  star: {fileID: 21300000, guid: 2236184ba5159bb49844bcc147518068, type: 3}
+  emptyStar: {fileID: 21300000, guid: 6ffdd3a9d16428e44b43ecd034bb28f8, type: 3}
 --- !u!135 &1647159050
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2821,7 +2823,7 @@ GameObject:
   - component: {fileID: 2011940901}
   - component: {fileID: 2011940900}
   m_Layer: 5
-  m_Name: Level Challenge
+  m_Name: LevelChallenge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
