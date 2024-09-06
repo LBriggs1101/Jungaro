@@ -10,6 +10,8 @@ public class ActivateLevelComplete : MonoBehaviour
     {
         if(other.gameObject.tag == "Player")
         {
+            other.gameObject.SetActive(false);
+            GameObject.Find("LevelDataManager").GetComponent<LevelDataManager>().levelBeaten();
             levelCompleteScreen.SetActive(true);
         }
     }
