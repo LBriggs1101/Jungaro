@@ -17,4 +17,4 @@ MonoBehaviour:
   bonusChallengeComplete: 1
   beatNoDeath: 1
   beatLevel: 1
-  coinCount: 12
+  coinCount: 16
