@@ -4,14 +4,35 @@ using UnityEngine;
 
 public class DeathManager : MonoBehaviour
 {
-
     public GameObject player;
     public GameObject deathScreen;
-    public int numOfDeaths;
+    public DeathData deathTracker;
 
     public void death()
     {
+        player.SetActive(false);
+        deathTracker.numOfDeaths++;
+        deathScreen.SetActive(true);
+    }
 
+    public bool beatNoDeath()
+    {
+        if(deathTracker.numOfDeaths > 0)
+        {
+            resetDeaths();
+            return false;
+        }
+        else
+        {
+            resetDeaths();
+            return true;
+        }
+
+    }
+
+    public void resetDeaths()
+    {
+        deathTracker.numOfDeaths = 0;
     }
 
 }
