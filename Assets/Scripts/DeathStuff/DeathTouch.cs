@@ -5,8 +5,19 @@ using UnityEngine;
 public class DeathTouch : MonoBehaviour
 {
 
-    void OnCollisionEnter(Collision other)
+    public DeathManager deathManager;
+
+    private void Awake() 
     {
-        
+        deathManager = GameObject.Find("DeathManager").GetComponent<DeathManager>();    
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("wow");
+        if(other.gameObject.tag == "Player")
+        {
+            deathManager.death();
+        }
     }
 }
