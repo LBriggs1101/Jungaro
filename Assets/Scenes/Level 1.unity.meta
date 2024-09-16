@@ -1,5 +1,10 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Samples.meta
+guid: e2bff9d9ce03f0240bf1bca4295322af
+folderAsset: yes
+========
 guid: 25f23abe187b61d46b628480508c20a9
+>>>>>>>> origin/Nathaniel:Assets/Scenes/Level 1.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
