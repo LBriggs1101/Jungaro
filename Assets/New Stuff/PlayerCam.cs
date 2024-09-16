@@ -42,8 +42,8 @@ public class PlayerCam : MonoBehaviour
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
 
         // rotate cam and orientation
-        camHolder.rotation = Quaternion.Euler(xRotation, yRotation, 0);
-        orientation.rotation = Quaternion.Euler(0, yRotation, 0);
+        camHolder.localRotation = Quaternion.Euler(xRotation, 0, 0);
+        orientation.rotation = Quaternion.Euler(orientation.rotation.x, yRotation, orientation.rotation.z);
 
         if (useFluentFov) HandleFov();
     }

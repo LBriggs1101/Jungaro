@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelName: Test
   bonusChallangeDesc: Beat the level without being stupid
-  bonusChallengeComplete: 1
-  beatNoDeath: 1
-  beatLevel: 1
-  coinCount: 16
+  bonusChallengeComplete: 0
+  beatNoDeath: 0
+  beatLevel: 0
+  coinCount: 0

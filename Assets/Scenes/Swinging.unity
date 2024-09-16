@@ -488,7 +488,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1473,7 +1473,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 523912829}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 675a0c723df35a144983d1a5f072f887, type: 3}
   m_Name: 
@@ -2335,6 +2335,16 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 28264075}
+    - target: {fileID: 1197764851047403449, guid: d61ff8aad7a45a24b8d7fb17764902bc,
+        type: 3}
+      propertyPath: text_mode
+      value: 
+      objectReference: {fileID: 390932497}
+    - target: {fileID: 1197764851047403449, guid: d61ff8aad7a45a24b8d7fb17764902bc,
+        type: 3}
+      propertyPath: text_speed
+      value: 
+      objectReference: {fileID: 2019819760}
     - target: {fileID: 3098943427931948183, guid: d61ff8aad7a45a24b8d7fb17764902bc,
         type: 3}
       propertyPath: cam
@@ -2345,6 +2355,11 @@ PrefabInstance:
       propertyPath: camHolder
       value: 
       objectReference: {fileID: 87734596}
+    - target: {fileID: 3098943427931948183, guid: d61ff8aad7a45a24b8d7fb17764902bc,
+        type: 3}
+      propertyPath: orientation
+      value: 
+      objectReference: {fileID: 1623225822}
     - target: {fileID: 3167652093845901842, guid: d61ff8aad7a45a24b8d7fb17764902bc,
         type: 3}
       propertyPath: m_Mesh
