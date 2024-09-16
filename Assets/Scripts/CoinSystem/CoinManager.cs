@@ -20,4 +20,9 @@ public class CoinManager : MonoBehaviour
         coinCountLevel.currentCoinCount += coinValue;
         coinText.text = "Coins: " + coinCountLevel.currentCoinCount;
     }
+
+    public int getCoinCount()
+    {
+        return coinCountLevel.currentCoinCount;
+    }
 }

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Samples/ProBuilder.meta
+guid: 66a4df99999e42f4e9968ff3358403b8
+========
 guid: 60d66ea1fda4d8d48854082e9163a7ea
+>>>>>>>> origin/Nathaniel:Assets/Samples.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

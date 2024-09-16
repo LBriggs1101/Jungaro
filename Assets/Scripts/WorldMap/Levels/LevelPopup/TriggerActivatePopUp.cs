@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class TiggerActivatePopUp : MonoBehaviour
+public class TriggerActivatePopUp : MonoBehaviour
 {
 
     public GameObject popUp;
