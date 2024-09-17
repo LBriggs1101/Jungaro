@@ -32,10 +32,18 @@ public class PlayerCam : MonoBehaviour
 
     private void Update()
     {
-        // get mouse input
-        float mouseX = Input.GetAxisRaw("Mouse X") * sensX;
-        float mouseY = Input.GetAxisRaw("Mouse Y") * sensY;
 
+        float mouseX = 0f;
+        float mouseY = 0f;
+
+        if(Time.timeScale != 0)
+        {
+            // get mouse input
+            mouseX = Input.GetAxisRaw("Mouse X") * sensX;
+            mouseY = Input.GetAxisRaw("Mouse Y") * sensY;
+  
+        }
+        
         yRotation += mouseX * multiplier;
 
         xRotation -= mouseY * multiplier;
@@ -46,6 +54,8 @@ public class PlayerCam : MonoBehaviour
         orientation.rotation = Quaternion.Euler(orientation.rotation.x, yRotation, orientation.rotation.z);
 
         if (useFluentFov) HandleFov();
+
+        
     }
 
     private void HandleFov()
