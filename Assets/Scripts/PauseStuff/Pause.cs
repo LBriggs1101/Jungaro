@@ -27,11 +27,15 @@ public class Pause : MonoBehaviour
     {
         pauseScreen.SetActive(true);
         Time.timeScale = 0;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
     
     public void unPause()
     {
         pauseScreen.SetActive(false);
         Time.timeScale = 1;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 }
