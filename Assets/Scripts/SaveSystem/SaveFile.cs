@@ -60,6 +60,13 @@ public class SaveFile : MonoBehaviour
         );
     }
 
+    public void load(int fileNumber)
+    {
+        string[] fileText = loadFile(fileNumber);
+
+        
+    }
+
     public string[] loadFile(int fileNumber)
     {
 
@@ -83,5 +90,19 @@ public class SaveFile : MonoBehaviour
         string[] lines = text.Split('\n');
 
         return lines;
+    }
+
+    public void deleteFile(int fileNumber)
+    {
+        if(fileNumber == 1)
+        {
+            directory = Application.dataPath + "/SaveFolder/Save.txt";
+        }
+        else if(fileNumber == 2)
+        {
+            directory = Application.dataPath + "/SaveFolder/Save2.txt";
+        }
+
+        File.WriteAllText(directory, string.empty)
     }
 }
