@@ -7,6 +7,7 @@ public class LevelDataManager : MonoBehaviour
     public LevelData levelData;
     private int currentAttemptCoins;
     private DeathManager deathManager;
+    private LevelChallengeManager levelChallengeManager;
 
     public void updateCoins()
     {
@@ -16,6 +17,7 @@ public class LevelDataManager : MonoBehaviour
     public void levelBeaten()
     {
         deathManager = GameObject.Find("DeathManager").GetComponent<DeathManager>();
+        levelChallengeManager = GameObject.Find("LevelChallengeManager").GetComponent<LevelChallengeManager>();
         levelData.beatLevel = true;
         updateCoins();
         if(currentAttemptCoins > levelData.coinCount)
@@ -28,7 +30,10 @@ public class LevelDataManager : MonoBehaviour
             levelData.beatNoDeath = true;
         }
         //Add beating with challenge from challenge manager.
-
+        if(levelChallengeManager.returnChallengeComplete() && !levelData.bonusChallengeComplete)
+        {
+            levelData.bonusChallengeComplete = true;
+        }
         //Add an auto save here.
     }
 

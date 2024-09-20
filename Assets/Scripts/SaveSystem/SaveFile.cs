@@ -64,7 +64,35 @@ public class SaveFile : MonoBehaviour
     {
         string[] fileText = loadFile(fileNumber);
 
-        
+        level1.bonusChallengeComplete = bool.Parse(fileText[0]); 
+        level1.beatNoDeath = bool.Parse(fileText[1]); 
+        level1.beatLevel = bool.Parse(fileText[2]); 
+        level1.coinCount = int.Parse(fileText[3]);
+
+        level2.bonusChallengeComplete = bool.Parse(fileText[4]); 
+        level2.beatNoDeath = bool.Parse(fileText[5]); 
+        level2.beatLevel = bool.Parse(fileText[6]); 
+        level2.coinCount = int.Parse(fileText[7]);
+
+        level3.bonusChallengeComplete = bool.Parse(fileText[8]); 
+        level3.beatNoDeath = bool.Parse(fileText[9]); 
+        level3.beatLevel = bool.Parse(fileText[10]); 
+        level3.coinCount = int.Parse(fileText[11]);
+
+        level4.bonusChallengeComplete = bool.Parse(fileText[12]); 
+        level4.beatNoDeath = bool.Parse(fileText[13]); 
+        level4.beatLevel = bool.Parse(fileText[14]); 
+        level4.coinCount = int.Parse(fileText[15]);
+
+        level5.bonusChallengeComplete = bool.Parse(fileText[16]); 
+        level5.beatNoDeath = bool.Parse(fileText[17]); 
+        level5.beatLevel = bool.Parse(fileText[18]); 
+        level5.coinCount = int.Parse(fileText[19]);
+
+        secretLevel.bonusChallengeComplete = bool.Parse(fileText[20]); 
+        secretLevel.beatNoDeath = bool.Parse(fileText[21]); 
+        secretLevel.beatLevel = bool.Parse(fileText[22]); 
+        secretLevel.coinCount = int.Parse(fileText[23]);
     }
 
     public string[] loadFile(int fileNumber)
@@ -103,6 +131,6 @@ public class SaveFile : MonoBehaviour
             directory = Application.dataPath + "/SaveFolder/Save2.txt";
         }
 
-        File.WriteAllText(directory, string.empty)
+        File.WriteAllText(directory, string.Empty);
     }
 }
