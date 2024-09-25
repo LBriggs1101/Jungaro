@@ -25,6 +25,8 @@ public class WorldMapMovement : MonoBehaviour
     //random important values
     private Vector3 velocity = new Vector3(0,0,0);
     private bool isGrounded; 
+
+    public int jumpDelayValue;
     
     // Update is called once per frame
     void Update()
@@ -32,10 +34,13 @@ public class WorldMapMovement : MonoBehaviour
         
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, ground);
 
-        if(isGrounded && velocity.y < 0)
+        if(isGrounded)
         {
-            velocity.y = 0;
-            canJump = true;
+            StartCoroutine(jumpDelay());
+            if(velocity.y < 0)
+            {
+                velocity.y = 0;
+            }
         }
 
         if(Input.GetButtonDown("Jump") && canJump)
@@ -103,5 +108,12 @@ public class WorldMapMovement : MonoBehaviour
         {
             playerModel.transform.eulerAngles = new Vector3(0, 0, 0);
         }
+    }
+
+    public IEnumerator jumpDelay()
+    {
+        yield return new WaitForSeconds(jumpDelayValue);
+
+        canJump = true;
     }
 }
