@@ -12,6 +12,7 @@ public class SaveFile : MonoBehaviour
     public LevelData level4;
     public LevelData level5;
     public LevelData secretLevel;
+    public SaveFileNumberLoader saveNumber;
 
     private string directory;
 
@@ -93,6 +94,8 @@ public class SaveFile : MonoBehaviour
         secretLevel.beatNoDeath = bool.Parse(fileText[21]); 
         secretLevel.beatLevel = bool.Parse(fileText[22]); 
         secretLevel.coinCount = int.Parse(fileText[23]);
+
+        saveNumber.currentSaveFileNumber = fileNumber;
     }
 
     public string[] loadFile(int fileNumber)

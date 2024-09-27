@@ -8,6 +8,7 @@ public class LevelDataManager : MonoBehaviour
     private int currentAttemptCoins;
     private DeathManager deathManager;
     private LevelChallengeManager levelChallengeManager;
+    public SaveFileNumberLoader saveNumber;
 
     public void updateCoins()
     {
@@ -34,7 +35,7 @@ public class LevelDataManager : MonoBehaviour
         {
             levelData.bonusChallengeComplete = true;
         }
-        //Add an auto save here.
+        GameObject.Find("SaveFileManager").GetComponent<SaveFile>().save(saveNumber.currentSaveFileNumber);
     }
 
     public bool getLevelBeat()
