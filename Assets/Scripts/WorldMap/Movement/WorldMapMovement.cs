@@ -26,7 +26,7 @@ public class WorldMapMovement : MonoBehaviour
     private Vector3 velocity = new Vector3(0,0,0);
     private bool isGrounded; 
 
-    public int jumpDelayValue;
+    public float jumpDelayValue;
     
     // Update is called once per frame
     void Update()
