@@ -57,7 +57,12 @@ public class SaveFile : MonoBehaviour
         secretLevel.bonusChallengeComplete + "\n" +
         secretLevel.beatNoDeath + "\n" +
         secretLevel.beatLevel + "\n" +
-        secretLevel.coinCount + "\n"
+        secretLevel.coinCount + "\n" +
+
+        (level1.beatLevel && level2.beatLevel && level3.beatLevel && level4.beatLevel && level5.beatLevel && secretLevel.beatLevel) + "\n" +
+        (level1.beatNoDeath && level2.beatNoDeath && level3.beatNoDeath && level4.beatNoDeath && level5.beatNoDeath && secretLevel.beatNoDeath) + "\n" +
+        (level1.bonusChallengeComplete && level2.bonusChallengeComplete && level3.bonusChallengeComplete && level4.bonusChallengeComplete && level5.bonusChallengeComplete && secretLevel.bonusChallengeComplete) + "\n"
+
         );
     }
 
@@ -96,6 +101,14 @@ public class SaveFile : MonoBehaviour
         secretLevel.coinCount = int.Parse(fileText[23]);
 
         saveNumber.currentSaveFileNumber = fileNumber;
+    }
+
+    public void loadFileStats()
+    {
+        string[] fileText = loadFile(1);
+        string[] fileText2 = loadFile(2);
+
+        GameObject.Find("FileStats").GetComponent<DisplayFileStars>().displayStars(bool.Parse(fileText[24]), bool.Parse(fileText[25]), bool.Parse(fileText[26]), bool.Parse(fileText2[24]), bool.Parse(fileText2[25]), bool.Parse(fileText2[26]));
     }
 
     public string[] loadFile(int fileNumber)
