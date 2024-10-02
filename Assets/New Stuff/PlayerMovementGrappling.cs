@@ -68,6 +68,8 @@ public class PlayerMovementGrappling : MonoBehaviour
 
     public bool activeGrapple;
     public bool swinging;
+    public int onthemove;
+
 
     private void Start()
     {
@@ -139,6 +141,7 @@ public class PlayerMovementGrappling : MonoBehaviour
             state = MovementState.freeze;
             moveSpeed = 0;
             rb.velocity = Vector3.zero;
+            onthemove = 0;
         }
 
         // Mode - Grappling
@@ -146,6 +149,7 @@ public class PlayerMovementGrappling : MonoBehaviour
         {
             state = MovementState.grappling;
             moveSpeed = sprintSpeed;
+            onthemove = 3;
         }
 
         // Mode - Swinging
@@ -153,13 +157,15 @@ public class PlayerMovementGrappling : MonoBehaviour
         {
             state = MovementState.swinging;
             moveSpeed = swingSpeed;
+            onthemove = 3;
+
         }
 
         // Mode - Crouching
         else if (Input.GetKey(crouchKey))
         {
-            state = MovementState.crouching;
-            moveSpeed = crouchSpeed;
+            //state = MovementState.crouching;
+            //moveSpeed = crouchSpeed;
         }
 
         // Mode - Sprinting
@@ -167,6 +173,7 @@ public class PlayerMovementGrappling : MonoBehaviour
         {
             state = MovementState.sprinting;
             moveSpeed = sprintSpeed;
+            onthemove = 1;
         }
 
         // Mode - Walking
@@ -174,12 +181,14 @@ public class PlayerMovementGrappling : MonoBehaviour
         {
             state = MovementState.walking;
             moveSpeed = walkSpeed;
+            onthemove = 1;
         }
 
         // Mode - Air
         else
         {
             state = MovementState.air;
+            onthemove = 0;
         }
     }
 
