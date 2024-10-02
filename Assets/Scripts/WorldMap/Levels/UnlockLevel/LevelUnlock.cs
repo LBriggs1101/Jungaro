@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TestLevel2Unlock : MonoBehaviour
+public class LevelUnlock : MonoBehaviour
 {
     public LevelData levelData;
     public TriggerActivatePopUp triggerActivatePopUp;

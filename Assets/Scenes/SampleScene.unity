@@ -1051,7 +1051,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 4848005010731246595}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &978100737
+--- !u!114 &978100736
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1060,9 +1060,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 978100734}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80fae2285d4e70348a90049b6938c58f, type: 3}
+  m_Script: {fileID: 11500000, guid: 6fc83c19c2cd20843a46377e9c673f76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collectedItem: 0
 --- !u!1 &1035244622
 GameObject:
   m_ObjectHideFlags: 0
@@ -2368,6 +2369,74 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4112e582638bd8241a605939ee0d077a, type: 3}
+--- !u!1001 &3983179015454551270
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1834459255763665773, guid: 9bb84a14a3ad7c74d883e99e34d5ca2e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.00066120934
+      objectReference: {fileID: 0}
+    - target: {fileID: 1834459255763665773, guid: 9bb84a14a3ad7c74d883e99e34d5ca2e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 1834459255763665773, guid: 9bb84a14a3ad7c74d883e99e34d5ca2e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1834459255763665773, guid: 9bb84a14a3ad7c74d883e99e34d5ca2e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1834459255763665773, guid: 9bb84a14a3ad7c74d883e99e34d5ca2e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1834459255763665773, guid: 9bb84a14a3ad7c74d883e99e34d5ca2e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1834459255763665773, guid: 9bb84a14a3ad7c74d883e99e34d5ca2e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1834459255763665773, guid: 9bb84a14a3ad7c74d883e99e34d5ca2e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1834459255763665773, guid: 9bb84a14a3ad7c74d883e99e34d5ca2e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1834459255763665773, guid: 9bb84a14a3ad7c74d883e99e34d5ca2e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5772463929137330851, guid: 9bb84a14a3ad7c74d883e99e34d5ca2e,
+        type: 3}
+      propertyPath: m_Name
+      value: BeastTooth
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9bb84a14a3ad7c74d883e99e34d5ca2e, type: 3}
 --- !u!1001 &4848005010731246595
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2380,7 +2449,7 @@ PrefabInstance:
         type: 3}
       propertyPath: thisLevelChallenge
       value: 
-      objectReference: {fileID: 978100737}
+      objectReference: {fileID: 978100736}
     - target: {fileID: 4527158302023386410, guid: 3c2ec855c13284648ac75ab3d8da2d38,
         type: 3}
       propertyPath: player
@@ -2460,7 +2529,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2397173892841458485, guid: 3c2ec855c13284648ac75ab3d8da2d38,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 978100737}
+      addedObject: {fileID: 978100736}
   m_SourcePrefab: {fileID: 100100000, guid: 3c2ec855c13284648ac75ab3d8da2d38, type: 3}
 --- !u!1001 &6230813824159428261
 PrefabInstance:
@@ -2616,3 +2685,4 @@ SceneRoots:
   - {fileID: 2997868073457422852}
   - {fileID: 4848005010731246595}
   - {fileID: 700072587}
+  - {fileID: 3983179015454551270}
