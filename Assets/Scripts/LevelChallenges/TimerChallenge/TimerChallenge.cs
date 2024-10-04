@@ -11,6 +11,8 @@ public class TimerChallenge : LevelChallenge
     private float currentTime;
     public TextMeshProUGUI timerItself;
 
+    public float maxTime;
+
     // Update is called once per frame
     void Update()
     {
@@ -20,6 +22,23 @@ public class TimerChallenge : LevelChallenge
         }
         TimeSpan timeItself = TimeSpan.FromSeconds(currentTime);
         timerItself.text = timeItself.ToString(@"mm\:ss\:fff");
+    }
+
+    public override bool beatChallengeValue()
+    {
+        if(currentTime <= maxTime)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public void stopTheTimer()
+    {
+        timerGoing = false;
     }
 
 }
