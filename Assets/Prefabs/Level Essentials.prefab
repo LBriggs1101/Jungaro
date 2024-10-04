@@ -1385,6 +1385,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MG: {fileID: 6185760384402593495}
+  PlayerObj: {fileID: 0}
 --- !u!1001 &1750992929637581566
 PrefabInstance:
   m_ObjectHideFlags: 0

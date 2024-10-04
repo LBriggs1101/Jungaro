@@ -14,11 +14,21 @@ public class Animgrabber : MonoBehaviour {
     
     // Update is called once per frame
     void Update () {
-        if (MG.onthemove == 1)
+
+        if (MG.onthemove == 3)
+        {
+            animator.SetInteger("AnimState", 3);
+        }
+        else if (MG.onthemove == 2)
+        {
+            animator.SetInteger("AnimState", 2);
+        }
+        else if (MG.onthemove == 1)
         {
             animator.SetInteger("AnimState", 1);
         }
-        else {
+        else 
+        {
             animator.SetInteger("AnimState", 0);
         }
     }
