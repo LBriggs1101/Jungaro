@@ -147,6 +147,41 @@ public class SaveFile : MonoBehaviour
             directory = Application.dataPath + "/SaveFolder/Save2.txt";
         }
 
-        File.WriteAllText(directory, string.Empty);
+        File.WriteAllText(directory, 
+        
+        false + "\n" +
+        false + "\n" +
+        false + "\n" +
+        0 + "\n" +
+
+        false + "\n" +
+        false + "\n" +
+        false + "\n" +
+        0 + "\n" +
+
+        false + "\n" +
+        false + "\n" +
+        false + "\n" +
+        0 + "\n" +
+
+        false + "\n" +
+        false + "\n" +
+        false + "\n" +
+        0 + "\n" +
+
+        false + "\n" +
+        false + "\n" +
+        false + "\n" +
+        0 + "\n" +
+
+        false + "\n" +
+        false + "\n" +
+        false + "\n" +
+        0 + "\n" +
+
+        false + "\n" +
+        false + "\n" +
+        false + "\n"
+        );
     }
 }
