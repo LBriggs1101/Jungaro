@@ -27,6 +27,8 @@ public class WorldMapMovement : MonoBehaviour
     private bool isGrounded; 
 
     public float jumpDelayValue;
+
+    public Animator anim;
     
     // Update is called once per frame
     void Update()
@@ -52,6 +54,15 @@ public class WorldMapMovement : MonoBehaviour
         //Get the input of the player.
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
+
+        if(horizontal != 0 || vertical != 0)
+        {
+            anim.SetBool("isWalking", true);
+        }
+        else
+        {
+            anim.SetBool("isWalking", false);
+        }
         
         //Start sprint
         if(Input.GetKeyDown(KeyCode.LeftShift))
