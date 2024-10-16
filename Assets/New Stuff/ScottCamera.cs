@@ -21,8 +21,8 @@ public class ScottCamera : MonoBehaviour
         turn.y = Input.GetAxis("Mouse Y");
 
         //Rotation for player and camera
-        if (turn.x != 0 || turn.y != 0) {
-
+        if (turn.x != 0 || turn.y != 0) 
+        {
             //Calculates amount of turn needed
             rotationy.y += turn.y * sensitivity * Time.deltaTime;
             rotationy.x += turn.x * sensitivity * Time.deltaTime;

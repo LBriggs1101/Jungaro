@@ -61,13 +61,16 @@ public class PlayerMovementGrappling : MonoBehaviour
         walking,
         sprinting,
         crouching,
-        air
+        air,
+        standing
     }
 
     public bool freeze;
 
     public bool activeGrapple;
     public bool swinging;
+    public int onthemove;
+
 
     private void Start()
     {
@@ -77,6 +80,7 @@ public class PlayerMovementGrappling : MonoBehaviour
         readyToJump = true;
 
         startYScale = transform.localScale.y;
+        onthemove = 0;
     }
 
     private void Update()
@@ -139,47 +143,60 @@ public class PlayerMovementGrappling : MonoBehaviour
             state = MovementState.freeze;
             moveSpeed = 0;
             rb.velocity = Vector3.zero;
+            onthemove = 0;
         }
 
         // Mode - Grappling
-        else if (activeGrapple)
-        {
-            state = MovementState.grappling;
-            moveSpeed = sprintSpeed;
-        }
+        //else if (activeGrapple)
+       // {
+        //    state = MovementState.grappling;
+        //    moveSpeed = sprintSpeed;
+         //   onthemove = 3;
+       // }
 
         // Mode - Swinging
         else if (swinging)
         {
             state = MovementState.swinging;
             moveSpeed = swingSpeed;
+            onthemove = 3;
+
         }
 
         // Mode - Crouching
-        else if (Input.GetKey(crouchKey))
-        {
-            state = MovementState.crouching;
-            moveSpeed = crouchSpeed;
-        }
+        //else if (Input.GetKey(crouchKey))
+        //{
+            //state = MovementState.crouching;
+            //moveSpeed = crouchSpeed;
+        //}
 
         // Mode - Sprinting
-        else if (grounded && Input.GetKey(sprintKey))
+        else if (grounded && horizontalInput > 0 ||grounded && horizontalInput < 0 ||grounded && verticalInput > 0 ||grounded && verticalInput < 0)
         {
             state = MovementState.sprinting;
             moveSpeed = sprintSpeed;
+            onthemove = 1;
         }
 
         // Mode - Walking
-        else if (grounded)
-        {
-            state = MovementState.walking;
-            moveSpeed = walkSpeed;
-        }
+        //else if (grounded)
+        //{
+        //    state = MovementState.walking;
+        //    moveSpeed = walkSpeed;
+        //    onthemove = 0;
+        //}
 
         // Mode - Air
-        else
+        else if (!grounded)
         {
             state = MovementState.air;
+            onthemove = 2;
+        }
+
+        else
+        {
+            state=MovementState.standing;
+            onthemove = 0;
         }
     }
 
