@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da1c3de22140ee14bb980f63bba18990, type: 3}
   m_Name: Level4
   m_EditorClassIdentifier: 
-  levelName: 
-  bonusChallangeDesc: 
+  levelName: Thorny Branches
+  bonusChallangeDesc: Beat the level within 180 seconds
   bonusChallengeComplete: 0
   beatNoDeath: 0
   beatLevel: 0

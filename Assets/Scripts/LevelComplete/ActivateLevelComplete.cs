@@ -13,6 +13,10 @@ public class ActivateLevelComplete : MonoBehaviour
             other.gameObject.SetActive(false);
             GameObject.Find("LevelDataManager").GetComponent<LevelDataManager>().levelBeaten();
             levelCompleteScreen.SetActive(true);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+
+            GameObject.Find("PauseManager").gameObject.SetActive(false);
 
             if(GameObject.Find("LevelChallengeManager").GetComponent<TimerChallenge>() != null)
             {

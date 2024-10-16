@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da1c3de22140ee14bb980f63bba18990, type: 3}
   m_Name: Level3
   m_EditorClassIdentifier: 
-  levelName: 
-  bonusChallangeDesc: 
+  levelName: Treetop Trapeze
+  bonusChallangeDesc: Find the special object hidden in the level
   bonusChallengeComplete: 0
   beatNoDeath: 0
   beatLevel: 0

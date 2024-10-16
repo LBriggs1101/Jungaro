@@ -3482,7 +3482,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endTransition: {fileID: 591355056}
-  newSceneName: Level 1
+  newSceneName: Secret Level
   waitTime: 1
 --- !u!1 &1016143259
 GameObject:
@@ -6329,7 +6329,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Jungle Coast
+  m_text: 'Bonus Cave
 
 
     Press E to Enter Level'

@@ -13,6 +13,8 @@ public class DeathManager : MonoBehaviour
         player.SetActive(false);
         deathTracker.numOfDeaths++;
         deathScreen.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
     public bool beatNoDeath()

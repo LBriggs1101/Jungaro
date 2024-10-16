@@ -35,5 +35,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FinalScene.unity
     guid: bdf9da2372da74442832520680d09591
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level 3.unity
+    guid: 9decc9fccd8012d45bd430b864ec3b8f
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level 5.unity
+    guid: f33cf0cbe73126a42b5318840b35616a
+  - enabled: 1
+    path: Assets/Scenes/Levels/Secret Level.unity
+    guid: 22afb94bbaa0e9e49a3cd6d5629d7fa5
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

@@ -283,7 +283,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Jungle Coast
+  m_text: 'Treetop Trapeze
 
 
     Press E to Enter Level'
@@ -2285,7 +2285,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Jungle Coast
+  m_text: 'Thorny Branches
 
 
     Press E to Enter Level'
@@ -6052,7 +6052,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endTransition: {fileID: 591355056}
-  newSceneName: Level 1
+  newSceneName: Level 4
   waitTime: 1
 --- !u!114 &1301197595
 MonoBehaviour:
@@ -6120,6 +6120,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1312111934 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1775b3ebc902cee4fa6a1b0d65ba4ba1,
+    type: 3}
+  m_PrefabInstance: {fileID: 946072412}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1368853361
 GameObject:
   m_ObjectHideFlags: 0
@@ -6363,7 +6369,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endTransition: {fileID: 591355056}
-  newSceneName: Level 1
+  newSceneName: Level 5
   waitTime: 1
 --- !u!114 &1430639985
 MonoBehaviour:
@@ -6488,7 +6494,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Jungle Coast
+  m_text: 'The Final Stretch
 
 
     Press E to Enter Level'
@@ -7503,7 +7509,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelData: {fileID: 11400000, guid: 38fc19c7ebe413745b1c5f20b9c4b361, type: 2}
   triggerActivatePopUp: {fileID: 1513842984}
-  lockObject: {fileID: 481601029}
+  lockObject: {fileID: 1312111934}
 --- !u!114 &1513842984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7785,7 +7791,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endTransition: {fileID: 591355056}
-  newSceneName: Level 1
+  newSceneName: Level 2
   waitTime: 1
 --- !u!114 &1582970983
 MonoBehaviour:
@@ -7910,7 +7916,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Jungle Coast
+  m_text: 'Fungal Pass
 
 
     Press E to Enter Level'
@@ -10525,7 +10531,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endTransition: {fileID: 591355056}
-  newSceneName: Level 1
+  newSceneName: Level 3
   waitTime: 1
 --- !u!114 &2104912844
 MonoBehaviour:

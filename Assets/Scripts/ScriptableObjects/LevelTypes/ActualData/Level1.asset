@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Level1
   m_EditorClassIdentifier: 
   levelName: Level 1
-  bonusChallangeDesc: Collect The Special Item
-  bonusChallengeComplete: 1
-  beatNoDeath: 1
-  beatLevel: 1
-  coinCount: 16
+  bonusChallangeDesc: Find the special object hidden in the level
+  bonusChallengeComplete: 0
+  beatNoDeath: 0
+  beatLevel: 0
+  coinCount: 0
