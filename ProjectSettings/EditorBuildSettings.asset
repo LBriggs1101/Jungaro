@@ -29,5 +29,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/Thorny Branches Level.unity
     guid: 6b56a7058f40cf44a879bbba3295b49a
+  - enabled: 1
+    path: Assets/Scenes/WorldMapStuff/CaveMap.unity
+    guid: a3acf253d165b704e8e1c3aeca08ee1e
+  - enabled: 1
+    path: Assets/Scenes/FinalScene.unity
+    guid: bdf9da2372da74442832520680d09591
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
